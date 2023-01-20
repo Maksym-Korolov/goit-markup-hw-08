@@ -1,0 +1,25 @@
+.header {
+    height: 60px;
+    border-bottom: 1px solid #ECECEC;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    @media (min-width: 768px) {
+        height: 80px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.1721;
+        letter-spacing: 0.02em;
+    }
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: relative;
+}
+
+

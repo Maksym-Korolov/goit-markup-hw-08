@@ -1,0 +1,26 @@
+.logo {
+    @extend %link;
+
+    display: block;
+
+    font-family: $ff-rlw;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.15;
+
+    &__web {
+        color: $color-accent;
+    }
+
+    &__studio--black {
+        color: $color-black;
+    }
+
+    &__studio--white {
+        color: $color-white;
+    }
+
+    &--footer {
+        margin-bottom: 20px;
+    }
+}

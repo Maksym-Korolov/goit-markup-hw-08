@@ -1,0 +1,95 @@
+body {
+    font-family: $ff-roboto;
+    font-size: 16px;
+    color: $color-primary;
+    background-color: $color-background;
+    letter-spacing: 0.03em;
+
+    &.modal-open{
+        overflow: hidden;
+    }
+}
+ul, h1, h2, h3, p {
+    padding: 0;
+    margin: 0;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 100%;   
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+    @media (min-width: 768px) {
+        max-width: 768px;
+    }
+
+    @media (min-width: 1200px) {
+        max-width: 1200px;
+    }
+}
+ 
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+%link {
+    text-decoration: none;
+    color: $color-heading;
+}
+%list {
+    list-style: none;
+}
+%sub-title {
+    color: $color-heading;
+    text-align: center;
+    font-size: 28px;
+    line-height: 1.161;  
+    margin-bottom: 30px;
+
+    @media (min-width: 1200px) {
+        font-size: 36px;
+        line-height: 1.1719;  
+        margin-bottom: 50px;
+    }
+}
+
+%heading {
+    color: $color-heading;
+    font-size: 18px;
+}
+%section {
+    padding-top: $section-padding;
+    padding-bottom: $section-padding;
+
+    @media (min-width: 1200px) {
+        padding-top: $section-padding-pc;
+        padding-bottom: $section-padding-pc;
+    }
+}
+
+%visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
